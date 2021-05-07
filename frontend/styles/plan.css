@@ -1,0 +1,511 @@
+/* Presets */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+img {
+    max-width: 100%;
+}
+
+/* Universal */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Body */
+
+body {
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Text Elements */
+
+p {
+    font-size: 1em;
+}
+
+a {
+    color: #0645AD;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 8px;
+}
+
+h3{
+    font-size: 1.25em;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    display: flex;
+    background: #A0A0A0;
+}
+
+/* LOGO */
+
+#logo {
+    margin: auto;
+    order: 1;
+    display: flex;
+    align-items: center;
+}
+
+#logoIcon {
+    pointer-events: none;
+    width: 38px;
+    margin-right: 2px;
+    vertical-align: text-bottom;
+}
+
+#logoText {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: black;
+}
+
+/* Hidden Ham */
+
+#ham{
+    display: none;
+}
+
+/* Search */
+
+#search {
+    display: flex;
+    margin: 8px;
+    margin-right: auto;
+    order: 0;
+}
+
+#searchField {
+    outline: none;
+    color: white;
+    flex-grow: 1;
+    background: none;
+    font-size: 1em;
+    padding-left: 8px;
+    padding-right: 12px;
+    border: none;
+    height: 40px;
+    border-bottom: 2px solid white;
+}
+
+#searchField::-webkit-input-placeholder {
+    color: #D9D9D9;
+}
+
+#submitSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 20px;
+    margin-left: 5px;
+    padding: 0;
+}
+
+#submitSearch:hover {
+    background: rgb(0, 95, 204);
+}
+
+/* Main Menu */
+
+#menuItems {
+    margin-left: auto;
+    margin: 0;
+    list-style: none;
+    order: 2;
+    width: 25%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menuItem {
+    text-align: center;
+    width: 100%;
+    border: none;
+    list-style: none;
+    height: 100%;
+}
+
+.menuItem:hover {
+    background: #005fcc;
+}
+
+#notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newEvent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* More Dropdown */
+
+#more {
+    position: relative;
+}
+
+#moreDropdown {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    outline: 2px solid rgb(0, 95, 204);
+    outline-offset: -2px;
+    right: 0;
+    z-index: 3;
+}
+
+#more:hover #moreDropdown {
+    display: block;
+}
+
+#moreDropdown ul {
+    padding: 8px;
+    list-style: none;
+    padding: 8px;
+}
+
+/* More Dropdown Items */
+
+#moreDropdown a {
+    display: flex;
+    align-items: center;
+}
+
+#moreDropdown li svg {
+    fill: #777777;
+}
+
+#moreDropdown li:hover svg {
+    fill: #0645AD;
+}
+
+#moreDropdown li div {
+    color: #777777;
+    padding: 6px 12px 6px 12px;
+    text-align: left;
+    flex: auto;
+}
+
+#moreDropdown li:hover div {
+    color: #0645AD;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+    #logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #logo {
+        float: right;
+    }
+    #searchField {
+        display: none;
+    }
+}
+
+/* Burger Menu */
+
+#burgerDropdown{
+    display: none;
+    background-color: #A0A0A0;
+    border-top: 1px solid #777;
+    height: 30px;
+}
+
+#mobileMenu{
+    position: fixed;
+    bottom: 0;
+    display: none;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-top: 1px solid #777;
+}
+
+#mobileMenu div{
+    padding: 8px;
+    color: #005fcc;   
+}
+
+#mapp{
+    color: #005fcc;
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    background-color: white;
+    height: 40px;
+}
+.planData{
+    background-color: black;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    margin: 8px;
+}
+
+h4{
+    color: black;
+}
+
+.close{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    justify-content: center;
+    font-size: 2em;
+
+}
+
+#information{
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.planText{
+    font-size: 2em;
+    padding: 16px;
+    flex:2;
+    background-color: white;
+    order: 2;
+}
+
+.aboutPlan{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 1;
+    order: 1;
+}
+
+h4{
+    padding: 8px;
+    margin:0;
+    font-size: 1em;
+    color: gray;
+
+}
+
+.mapPlan{
+    order: 3;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.planMedia{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("../images/uni.jpeg");
+    background-position: center;
+}
+
+.sideBox{
+    margin: 0 8px 0 8px;
+    display: flex;
+}
+
+#attendees{
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    height: 32px;
+    width: 96px;
+    overflow: hidden;
+}
+
+#attendees div:nth-of-type(1){
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    border-radius: 100px;
+    background-color: red;
+}
+
+#attendees div:nth-of-type(2){
+    position: absolute;
+    margin-left: 16px;
+    height: 32px;
+    width: 32px;
+    border-radius: 100px;
+    background-color: blue;
+}
+#attendees div:nth-of-type(3){
+    position: absolute;
+    margin-left: 32px;
+    height: 32px;
+    width: 32px;
+    border-radius: 100px;
+    background-color: red;
+}
+
+#attendees div:nth-of-type(4){
+    position: absolute;
+    margin-left: 48px;
+    height: 32px;
+    width: 32px;
+    border-radius: 100px;
+    background-color: green;
+}
+#attendees div:nth-of-type(5){
+    position: absolute;
+    margin-left: 64px;
+    height: 32px;
+    width: 32px;
+    border-radius: 100px;
+    background-color: yellow;
+}
+#attendees div:nth-of-type(6){
+    position: absolute;
+    margin-left: 80px;
+    height: 32px;
+    width: 32px;
+    border-radius: 100px;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg{
+    fill: black;
+}
+button{
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 96px;
+}
+button:hover{
+    box-shadow: inset 0 0 0 1px #0F95F6;
+    background-color: white;
+}
+
+button:hover svg{
+   fill: #0F95F6;
+}
+
+button:hover div{
+    color: #0F95F6;
+ }
+
+ button:active{
+    background-color: #0F95F6;
+}
+button:active svg{
+    fill: white;
+}
+button:active div{
+    color: white;
+}
+
+
+button svg{
+    margin-right: 6px;
+}
+
+#comments div{
+    justify-content: space-between;
+    display: flex;
+}
+#comments img{
+    transform: rotate(180deg);
+    width: 20px;
+    height: 10px;
+}
+
+#comments{
+    box-sizing: border-box;
+    font-weight: 600;
+    padding: 8px;
+    background-color: #ffffffaa;
+    width: 50%;
+    border-radius: 0 0 4px 4px;
+}
+#monsta{
+    display: none;
+}
+span{
+    outline: none;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    min-height: 40px;
+    line-height: 20px;
+    padding: 0;
+    border: none;
+    background-color: white;
+
+}
+#pam{
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    background-position: center;
+    background-image: url("../images/map.png");
+
+}
+a img{
+    width: 20px;
+}
+#spread{
+    display: flex;
+    justify-content: space-around;
+}
