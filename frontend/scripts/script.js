@@ -10,7 +10,7 @@ function actions() {
     document.querySelectorAll(".calDay")[3].onscroll = myFunction;
 }
 function actions2() {
-    document.querySelector("main").style.height = window.innerHeight - 48 - 41 + "px";
+    document.querySelector("main").style.height = window.innerHeight - 48 - 40 + "px";
 }
 
 function actions3() {

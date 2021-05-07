@@ -290,23 +290,16 @@ header {
 nav {
     height: 40px;
     display: flex;
-    background: white;
     position: sticky;
     top: 0px;
     z-index: 1;
-    border-bottom: thin solid #777777;
-}
-
-/* Nav Separator */
-
-.navSeparator {
-    border: thin solid #777777;
 }
 
 /* Day Selector */
 
 #daySelectorViewbox {
     flex-grow: 1;
+    background-color: #EEEEEE;
     box-sizing: content-box;
     position: relative;
     overflow: hidden;
@@ -336,7 +329,7 @@ nav {
     list-style: none;
     display: flex;
     align-items: center;
-    color: #0645AD;
+    color: #005fcc;
     font-weight: 700;
     padding: 0;
 }
@@ -356,7 +349,7 @@ nav {
 }
 
 .selectorVoid {
-    background-color: #A0A0A0 !important;
+    background-color: #777 !important;
     transform: skew(-30deg);
     width: 1px !important;
     height: 40px;
@@ -366,9 +359,11 @@ nav {
 }
 
 .selectorMonth {
-    background: linear-gradient(to right, #eeeeee, white);
+    background: linear-gradient(to right, #ccc, #cccccc00);
     transform: skew(-30deg);
-    height:auto;
+    height:48px;
+    display: flex;
+    align-items: center;
     margin-left: 4px;
     margin-right: 4px;
 }
@@ -377,20 +372,22 @@ nav {
     padding-right: 4px;
     padding-left: 4px;
     transform: skew(30deg);
-    color: #777777;
+    color: black;
 }
 
 /* Nav Date */
 
 #navDate {
-    margin-left: 8px;
-    margin-right: 8px;
+    background: transparent;
+    padding-left: 8px;
+    padding-right: 8px;
     display: flex;
     align-items: center;
     font-weight: 700;
 }
 
 #navDate a {
+    
     font-size: 1em;
     color: #777777;
 }
