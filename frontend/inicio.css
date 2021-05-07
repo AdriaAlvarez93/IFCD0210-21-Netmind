@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-image: url(img/SL-0210121-40570-15.jpg);
+    background-size: cover;
+    font-family: 'Karantina', cursive;
+}
+
+.logo{
+    display: flex;
+    margin-left: 2.8rem;
+     align-items: center;
+     justify-content:center;
+     margin-bottom: 10px;
+     
+}
+
+main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.contenedor {
+    background-color:white ;
+    height: 320px;
+    width:450px;
+    box-shadow: 0px 5px 25px 5px  white;
+    border-radius: 5px;
+    font-family: 'Karantina', cursive;
+    font-size:50px;
+   display: flex;
+   flex-direction: column;
+   text-align:center;
+    
+}
+
+.final{
+    display: flex;
+    align-items: center;
+}
+
+.final a{
+    
+    font-size: 25px;
+    width:45%;
+    text-decoration: none;
+    color:black;
+}
+
+.final input{
+    width:45%;
+    font-family: 'Karantina', cursive;
+    font-size:25px;
+    cursor: pointer;
+    transition-property: background-color, border-radius;
+    transition-duration:2s;
+}
+
+
+.final input:hover {
+    background-color:white;
+    color:black;
+    border-radius: 23px;
+    }
+
+
+
+
+input{
+    margin: 10px;
+    height: 30px;
+    width:80%;
+    background-color:black ;
+    color:white;
+    border-radius: 5px;
+   
+
+
+}
+

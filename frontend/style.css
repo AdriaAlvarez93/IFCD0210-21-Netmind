@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+    display:flex;
+    flex-direction:column;
+    
+}
+
+
+/*CAVECERA*/
+
+header{
+    height: 150px;
+    width:100%;
+    background-color: white ; 
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow:0 0 10px 5px;
+    border-radius: 7px;
+    
+  }
+.logo {
+    display: flex;
+   margin-left: 2.8rem;
+    align-items: center;
+}
+
+.logo img{
+    height:140px;
+    margin-right: 25px;
+}
+
+.logo  .titulo{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:5rem;
+    color:black ;
+    text-decoration: none;
+    
+    
+}
+
+header nav ul{
+    display: flex;
+   margin-right: 2rem;
+  list-style: none;
+}
+
+header nav ul li {
+    margin: 10px;
+    border: 1px solid black ;
+    border-radius:5px;
+    width: 300px;
+    height: 80px ;
+    padding: 10px;
+    text-align:center;
+    transition-property: background-color, border-radius;
+    transition-duration:3s;
+   
+    }
+
+header nav ul li a{
+    font-size: 50px;
+    color: black ;
+    text-align: center;
+    text-decoration: none;
+  font-family: 'Karantina', cursive;
+    
+    
+}
+
+
+/*decoración*/
+li:hover{
+     background-color: black;
+     border-radius: 23px ;
+    }
+a:hover{
+    color:white;
+    border-radius: 23px ;
+}
+
+
+
+
+/*Banner*/
+
+
+.banner{
+   
+    background-image: url(img/laptop-3174729_1920.jpg) ;
+    height: 700px;
+    width: 99%;
+    background-size: cover;
+    margin:10px auto;
+    border-radius: 5px;
+    display:flex;
+    text-align: right;
+    align-items: center;
+
+    
+
+
+}
+
+.banner h3{
+
+    position: absolute;
+    color:black;
+    margin-left:  500px;
+    font-size: 70px;
+    font-family: 'Rajdhani', sans-serif;
+    margin-right: 100px;
+}
+
+.banner a{
+    background-color: white;
+    border-radius: 5px;
+    text-decoration:none;
+    font-size: 20px;
+    color: black;
+    transition-property: background-color, border-radius;
+    transition-duration:3s;
+    
+}
+
+.banner a:hover{
+    background-color:black;
+     color: white;
+     border-radius: 23px ;
+}
+
+
+
+
+
+
+
+footer {
+    color:white;
+    text-align:center;
+    margin: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    display:flex;
+    margin-left: 30px;
+    
+
+
+}
+
+#contacto{
+    color:white;
+    text-decoration: none;
+    margin-left: 33%;
+}
+
