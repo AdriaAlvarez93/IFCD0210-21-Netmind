@@ -327,6 +327,11 @@ nav {
     padding: 8px;
 }
 
+#daySelector {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 /* Day Selector Decorations */
 
 #selectorToday {
