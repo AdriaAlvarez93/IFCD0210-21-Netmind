@@ -53,25 +53,28 @@ h3{
 /* HEADER */
 
 header {
+    height: 48px;
     position: relative;
     display: flex;
-    background: #A0A0A0;
+    background: #bfbfbf;
 }
 
 /* LOGO */
 
 #logo {
+    height: 48px;
     margin: auto;
     order: 1;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 #logoIcon {
+    vertical-align:text-bottom;
     pointer-events: none;
     width: 38px;
     margin-right: 2px;
-    vertical-align: text-bottom;
 }
 
 #logoText {
@@ -91,22 +94,27 @@ header {
 
 #search {
     display: flex;
-    margin: 8px;
+    align-items:center;
     margin-right: auto;
     order: 0;
 }
 
 #searchField {
+    margin-left: 4px;
     outline: none;
-    color: white;
+    color: #777;
     flex-grow: 1;
     background: none;
     font-size: 1em;
-    padding-left: 8px;
+    padding-left: 12px;
     padding-right: 12px;
     border: none;
     height: 40px;
-    border-bottom: 2px solid white;
+    border-radius: 32px;
+    border: 2px solid white;
+}
+#searchField:focus{
+    background-color: rgba(255,255,255,0.666);
 }
 
 #searchField::-webkit-input-placeholder {
@@ -281,17 +289,13 @@ nav{
     height: 40px;
 }
 .planData{
-    background-color: black;
+    background-color: #9B292B;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
 }
 h3{
     margin: 8px;
-}
-
-h4{
-    color: black;
 }
 
 .close{
@@ -318,6 +322,7 @@ h4{
 }
 
 .aboutPlan{
+    background-color: black;
     height: 200px;
     display: flex;
     justify-content: space-between;
@@ -328,14 +333,16 @@ h4{
 }
 
 h4{
+    font-family: Roboto Condensed;
     padding: 8px;
     margin:0;
-    font-size: 1em;
-    color: gray;
+    font-size: 1.25em;
+    color: black;
 
 }
 
 .mapPlan{
+    background-color: black;
     order: 3;
     overflow: hidden;
     flex: 1;
@@ -474,7 +481,8 @@ button svg{
     box-sizing: border-box;
     font-weight: 600;
     padding: 8px;
-    background-color: #ffffffaa;
+    background-color: #ffffff77;
+    backdrop-filter: blur(4px);
     width: 50%;
     border-radius: 0 0 4px 4px;
 }
@@ -502,10 +510,21 @@ span{
     background-image: url("../images/map.png");
 
 }
-a img{
-    width: 20px;
-}
 #spread{
     display: flex;
     justify-content: space-around;
+}
+@media all and (max-width: 500px) {
+    .planText{
+        order: 1;
+    }
+    .mapPlan{
+        order: 3;
+    }
+
+    #information{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
