@@ -364,6 +364,7 @@ nav {
     display: flex;
     align-items: center;
     font-weight: 700;
+    background-color: white;
 }
 
 #navDate a {
@@ -389,6 +390,7 @@ main {
 }
 
 .calDay {
+    margin: 0 !important;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -462,6 +464,7 @@ main {
 @media all and (max-width: calc(256px*2 + 6px)) {
 
     #mobileMenu{
+        z-index: 2;
         display: flex;
         width: 100%;
         align-items: center;
