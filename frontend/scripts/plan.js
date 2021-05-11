@@ -7,6 +7,7 @@ function actions() {
     document.querySelector("header").style.height = alto + "px";
     document.querySelector("#moreDropdown").style.top = alto + "px";
     actions2();
+    
 }
 function actions2() {
 

@@ -30,7 +30,7 @@ p {
 }
 
 a {
-    color: #0645AD;
+    color: #0E4CB0;
     text-decoration: none;
 }
 
@@ -111,8 +111,11 @@ header {
 }
 
 #searchField::-webkit-input-placeholder {
-    color: #D9D9D9;
+    color: white;
 }
+#searchField::placeholder {
+    color: white;
+  }
 
 #submitSearch {
     display: flex;
@@ -128,7 +131,7 @@ header {
 }
 
 #submitSearch:hover {
-    background: #0080ff;
+    background: #0E4CB0;
 }
 
 /* Main Menu */
@@ -139,7 +142,7 @@ header {
     list-style: none;
     order: 2;
     width: 25%;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -148,7 +151,6 @@ header {
 
 .menuItem {
     display: flex;
-    text-align: center;
     width: 100%;
     border: none;
     list-style: none;
@@ -156,22 +158,25 @@ header {
     justify-content: center;
     align-items: center;
 }
+#newEvent img{
+    margin-top: 4px;
+}
+#more img{
+    margin-bottom: 2px;
+}
 
 .menuItem:hover {
-    background: #0080ff;
+    background: #0E4CB0;
 }
 
 /* More Dropdown */
 
-#more {
-    position: relative;
-}
-
 #moreDropdown {
+    text-align: center;
     display: none;
     position: absolute;
     background-color: #ffffff;
-    outline: 2px solid #0080ff;
+    outline: 2px solid #0E4CB0;
     outline-offset: -2px;
     right: 0;
     z-index: 3;
@@ -192,16 +197,13 @@ header {
 
 /* More Dropdown Items */
 
-#moreDropdown a {
-}
-
 #moreDropdown li svg {
     fill: #808080;
 }
 
 #moreDropdown li:hover svg {
     margin: 0;
-    fill: #0080ff;
+    fill: #0E4CB0;
 }
 
 #moreDropdown li div {
@@ -211,7 +213,7 @@ header {
 }
 
 #moreDropdown li:hover div {
-    color: #0080ff;
+    color: #0E4CB0;
 }
 
 /* Media Queries */
@@ -253,11 +255,11 @@ header {
 
 #mobileMenu div{
     padding: 8px;
-    color: #0080ff;   
+    color: #0E4CB0;   
 }
 
 #mapp{
-    color: #0080ff;
+    color: #0E4CB0;
 }
 
 /* Nav */
@@ -304,7 +306,7 @@ nav {
     list-style: none;
     display: flex;
     align-items: center;
-    color: #0080ff;
+    color: #0E4CB0;
     font-weight: 700;
     padding: 0;
 }
@@ -359,8 +361,8 @@ nav {
 
 #navDate {
     background: transparent;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -374,7 +376,7 @@ nav {
 }
 
 #navDate a:hover {
-    color: #0645AD;
+    color: #0E4CB0;
 }
 
 /* Main */
@@ -527,6 +529,9 @@ main {
         display: none;
     }
     #logoText{
+        display: none;
+    }
+    #daySelectorViewbox{
         display: none;
     }
 }

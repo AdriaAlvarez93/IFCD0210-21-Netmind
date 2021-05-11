@@ -7,9 +7,9 @@ function actions() {
     document.querySelector("#moreDropdown").style.top = alto + "px";
     actions2();
 
-    document.querySelectorAll(".calDay")[3].onscroll = myFunction;
+    document.querySelector("#friday").onscroll = myFunction;
 
-    var colorz = ["#9C0241","#9B292B","#983C05","#954A00","#905700","#8A6200","#836C00","#7B7400","#727C0E","#6A8332","#618947","#509050","#33975C","#009D6B","#00A37C","#00A88F","#00ACA3","#00AFB7","#00B0CB","#00AFDF","#00ABF2","#00A5FF","#599BFF","#948DFF","#C17CFF","#E666FF","#FF4BFF","#FF2AFF","#FF00F3","#FF00D8","#FF00B7","#FF178B"];
+    var colorz = ["#882C45","#902E85","#6154AA","#0079A5","#008C7A","#008F29","#808800","#BF7700","#E46081","#E35BD3","#9785FF","#00B1ED","#00C2A9","#00BE29","#A1AC00","#EB8E00","#FF6494"];
 
     color = colorz.sort(() => Math.random() - 0.5);
 
@@ -51,8 +51,8 @@ function actions5() {
 }
 
 function myFunction() {
-  if (document.querySelectorAll(".calDay")[3].scrollTop > 0) {
-    document.querySelectorAll(".days")[3].className = "slideUp";
+  if (document.querySelector("#friday").scrollTop > 0) {
+    document.querySelector("#friday2").className = "slideUp";
     
 }else{
     document.querySelectorAll(".slideUp")[0].className = "days";
