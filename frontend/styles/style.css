@@ -93,9 +93,9 @@ header {
 }
 
 #searchField {
+    color: black;
     margin-left: 4px;
     outline: none;
-    color: #808080;
     flex-grow: 1;
     background: none;
     font-size: 1em;
@@ -104,17 +104,19 @@ header {
     border: none;
     height: 40px;
     border-radius: 32px;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 #searchField:focus{
-    background-color: rgba(255,255,255,0.666);
+    background-color: rgba(255,255,255,0.5);
 }
 
 #searchField::-webkit-input-placeholder {
-    color: white;
+    color: black;
+    opacity: 0.5;
 }
 #searchField::placeholder {
-    color: white;
+    color: black;
+    opacity: 0.5;
   }
 
 #submitSearch {
@@ -132,6 +134,14 @@ header {
 
 #submitSearch:hover {
     background: #0E4CB0;
+}
+
+#submitSearch svg {
+    fill: black;
+}
+
+#submitSearch:hover svg {
+    fill: white;
 }
 
 /* Main Menu */
@@ -161,8 +171,30 @@ header {
 #newEvent img{
     margin-top: 4px;
 }
-#more img{
+#moreee{
     margin-bottom: 2px;
+}
+
+#moreee{
+    fill: black;
+}
+#more:hover #moreee{
+    fill: white;
+}
+
+#bell svg{
+    fill: black;
+}
+#bell:hover svg{
+    fill: white;
+}
+
+#new svg{
+    fill: black;
+}
+
+#new:hover svg{
+    fill: white;
 }
 
 .menuItem:hover {

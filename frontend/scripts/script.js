@@ -9,7 +9,23 @@ function actions() {
 
     document.querySelector("#friday").onscroll = myFunction;
 
-    var colorz = ["#882C45","#902E85","#6154AA","#0079A5","#008C7A","#008F29","#808800","#BF7700","#E46081","#E35BD3","#9785FF","#00B1ED","#00C2A9","#00BE29","#A1AC00","#EB8E00","#FF6494"];
+    var colorz = ["#826c33",
+    "#6753bb",
+    "#569c30",
+    "#ad5ac2",
+    "#958e26",
+    "#6981e3",
+    "#d46e31",
+    "#548fc9",
+    "#c64b37",
+    "#3f9d65",
+    "#996dad",
+    "#3d6b31",
+    "#525c99",
+    "#ba802f",
+    "#3c9a93",
+    "#a66144",
+    "#7c944f"];
 
     color = colorz.sort(() => Math.random() - 0.5);
 
@@ -18,6 +34,7 @@ function actions() {
         document.querySelectorAll(".planBox")[i].style.outline = `1px solid ${color[i]}`;
         document.querySelectorAll(".planInfo")[i].style.backgroundColor = color[i];
     }
+
 }
 function actions2() {
     document.querySelector("main").style.height = window.innerHeight - 48 - 40 + "px";

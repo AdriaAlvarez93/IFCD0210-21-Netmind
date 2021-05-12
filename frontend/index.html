@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+    <div id="eventPopup"></div>
     <!-- MENU -->
     <header>
         <!-- LOGO -->
@@ -26,15 +28,36 @@
         <!-- SEARCH -->
         <div id="search">
             <input id="searchField" type="search" name="search" placeholder="Search..." maxlength="40"><button
-                type="submit" id="submitSearch" title="Explore"><img src="images/explore.svg"></button>
+                type="submit" id="submitSearch" title="Explore"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M12.6187 16.0001L13.609 13.6092L15.9999 12.6189L7.9999 8.00007L12.6187 16.0001Z" fill-opacity="0.5"/>
+                    <path d="M18.3908 13.6092L19.3811 16.0001L24 7.99997L15.9999 12.6189L18.3908 13.6092Z" fill-opacity="0.5"/>
+                    <path d="M19.3811 16.0001L18.3908 18.3909L15.9999 19.3813L23.9999 24.0001L19.3811 16.0001Z" fill-opacity="0.5"/>
+                    <path d="M15.9999 19.3813L13.609 18.3909L12.6187 16.0001L8 24L15.9999 19.3813Z" fill-opacity="0.5"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6188 12.619L16 0L19.3811 12.619L32 16.0002L19.3811 19.3814L16 32L12.6188 19.3814L0 16.0002L12.6188 12.619ZM16 18C17.1046 18 18 17.1046 18 16C18 14.8954 17.1046 14 16 14C14.8954 14 14 14.8954 14 16C14 17.1046 14.8954 18 16 18Z"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="32" height="32" fill="black"/>
+                    </clipPath>
+                    </defs>
+                    </svg></button>
         </div>
         <!-- MENU ITEMS -->
         <ul id="menuItems">
-            <li class="menuItem" id="notifications"><a href="#" id="notifications"><img
-                        src="images/bell.svg"></a></li>
-            <li class="menuItem" id="newEvent"><a href="#" title="New LinkUp"><img
-                        src="images/new.svg"></a></li>
-            <li class="menuItem" id="more"><a href="#">
+            <li class="menuItem" id="bell"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 25C19 26.6569 17.6569 28 16 28C14.3431 28 13 26.6569 13 25C13 23.3431 14 20 16 20C18 20 19 23.3431 19 25Z" fill-opacity="0.5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1177 30.7258C22.6923 31.5343 19.4689 32 16 32C12.5311 32 9.30768 31.5343 6.88226 30.7258C5.68001 30.325 4.5628 29.8038 3.70507 29.1278C2.86989 28.4696 2 27.4277 2 26C2 24.5723 2.86989 23.5304 3.70507 22.8722C4.5628 22.1962 5.68001 21.675 6.88226 21.2742C9.30768 20.4657 12.5311 20 16 20C19.4689 20 22.6923 20.4657 25.1177 21.2742C26.32 21.675 27.4372 22.1962 28.2949 22.8722C29.1301 23.5304 30 24.5723 30 26C30 27.4277 29.1301 28.4696 28.2949 29.1278C27.4372 29.8038 26.32 30.325 25.1177 30.7258ZM16 30C22.6274 30 28 28.2091 28 26C28 23.7909 22.6274 22 16 22C9.37258 22 4 23.7909 4 26C4 28.2091 9.37258 30 16 30Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C11.5817 7 8 10.5817 8 15C8 17.8031 6.85694 19.5175 5.85376 21.0221L5.83205 21.0547C4.84037 22.5422 4 23.8233 4 26H2C2 23.1969 3.14306 21.4825 4.14624 19.9779L4.16795 19.9453C5.15963 18.4578 6 17.1767 6 15C6 9.47715 10.4772 5 16 5C21.5228 5 26 9.47715 26 15C26 17.1767 26.8404 18.4578 27.8321 19.9453L27.8538 19.9779C28.8569 21.4825 30 23.1969 30 26H28C28 23.8233 27.1596 22.5422 26.1679 21.0547L26.1462 21.0221C25.1431 19.5175 24 17.8031 24 15C24 10.5817 20.4183 7 16 7Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.23075 20.5C9.84613 19 10.4615 17.5 10.4615 15C10.4615 11.2918 11.8416 8.10742 13.8126 6.72911L15.9999 6L19.9999 7L24.9999 13V17L28.9999 24L19.9999 21H11.9999L8.60657 22.1311C8.79662 21.5582 9.01368 21.0291 9.23075 20.5Z" fill-opacity="0.5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0C14.3431 0 13 1.34315 13 3C13 4.65685 14.3431 6 16 6C17.6569 6 19 4.65685 19 3C19 1.34315 17.6569 0 16 0ZM14.5 3C14.5 2.17157 15.1716 1.5 16 1.5C16.8284 1.5 17.5 2.17157 17.5 3C17.5 3.82843 16.8284 4.5 16 4.5C15.1716 4.5 14.5 3.82843 14.5 3Z"/>
+                </svg></li>
+            <li class="menuItem" id="new"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 9L17 23L15 23L15 9L17 9Z"/>
+                <path d="M23 17L9 17L9 15L23 15L23 17Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28C22.6274 28 28 22.6274 28 16ZM2 8C2 4.68629 4.68629 2 8 2H24C27.3137 2 30 4.68629 30 8V24C30 27.3137 27.3137 30 24 30H8C4.68629 30 2 27.3137 2 24V8Z" fill-opacity="0.5"/>
+                </svg></li>
+            <li class="menuItem" id="more">
                     <div id="moreDropdown">
                         <ul>
                             <li><a href="profile.html">
@@ -61,7 +84,11 @@
                                 </a></li>
                         </ul>
                     </div>
-                    <img src="images/more.svg">
+                    <svg id="moreee" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 15L16 23L24 15H28L16 27L4 15H8Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 7L16 15L24 7H28L16 19L4 7H8Z" fill-opacity="0.5"/>
+                        </svg>
+                        
                 </a></li>
         </ul>
     </header>
