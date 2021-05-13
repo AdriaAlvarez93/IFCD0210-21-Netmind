@@ -1,0 +1,19 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 26V7H10.5455H16H21.4545H26V26H21.4545H16H10.5455H6Z" stroke="black" stroke-width="2"/>
+<path d="M5 12H26" stroke="black" stroke-width="2"/>
+<path d="M10 9V4" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M22 9V4" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<circle cx="10" cy="19" r="1" fill="black"/>
+<circle cx="10" cy="22" r="1" fill="black"/>
+<circle cx="19" cy="22" r="1" fill="black"/>
+<circle cx="19" cy="19" r="1" fill="black"/>
+<circle cx="19" cy="16" r="1" fill="black"/>
+<circle cx="13" cy="16" r="1" fill="black"/>
+<circle cx="13" cy="19" r="1" fill="black"/>
+<circle cx="13" cy="22" r="1" fill="black"/>
+<circle cx="22" cy="19" r="1" fill="black"/>
+<circle cx="22" cy="16" r="1" fill="black"/>
+<circle cx="16" cy="16" r="1" fill="black"/>
+<circle cx="16" cy="19" r="1" fill="black"/>
+<circle cx="16" cy="22" r="1" fill="black"/>
+</svg>
