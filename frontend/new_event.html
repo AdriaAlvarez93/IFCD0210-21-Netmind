@@ -126,24 +126,32 @@
             <form action="submit">
                 <div id="required">
                     <h3>Required:</h4>
-                        <div class="container">
-                            <div class="formFields">
-                                <label for="audience">Audience:</label>
-                                <select id="audience">
-                                    <option value="1">Personal</option>
-                                    <option value="1">Private</option>
-                                    <option value="1">Pubilc</option>
-                                </select>
+                        <div class="container cont1">
+                            <div id="uiElement">
+                                <div class="circle c1"></div>
+                                <div class="circle c2"></div>
+                                <div class="circle c3"></div>
+                                <div class="bar"></div>
                             </div>
-                            <div id="description" class="formFields">
-                                <label for="plan" id="descTitle">Plan:</label>
-                                <textarea id="plan" placeholder="The description of the event..."></textarea>
-                            </div>
-                            <div class="formFields">
-                                <label for="day">Date:</label>
-                                <input type="date" id="day">
-                                <label for="time">Time:</label>
-                                <input type="time" id="time">
+                            <div id="cien">
+                                <div class="formFields">
+                                    <label for="audience">Audience:</label>
+                                    <select id="audience">
+                                        <option value="1">Personal</option>
+                                        <option value="1">Private</option>
+                                        <option value="1">Pubilc</option>
+                                    </select>
+                                </div>
+                                <div id="description" class="formFields">
+                                    <label for="plan" id="descTitle">Plan:</label>
+                                    <textarea id="plan" placeholder="The description of the event..."></textarea>
+                                </div>
+                                <div class="formFields">
+                                    <label for="day">Date:</label>
+                                    <input type="date" id="day">
+                                    <label for="time">Time:</label>
+                                    <input type="time" id="time">
+                                </div>
                             </div>
                         </div>
                 </div>
@@ -152,20 +160,21 @@
                     <h3>Optional:</h4>
                         <div class="container">
                             <div class="formFields">
-                                <label for="location">Location:</label>
+                                <img src="images/loca2.svg" class="baseline"><label for="location">Location:</label>
                                 <input type="text" id="location">
                             </div>
                             <div class="formFields">
-                                <label for="location">Image:</label>
+                                <img src="images/img.svg" class="baseline"><label for="location">Image:</label>
                                 <input type="file" id="image">
                             </div>
                             <div class="formFields">
-                                <label for="maxAttendees">Max Attendees:</label>
+                                <img src="images/num.svg" class="baseline"><label for="maxAttendees">Max
+                                    Attendees:</label>
                                 <input type="number" min="1" id="maxAttendees">
                             </div>
                         </div>
-                        <button class="formFields2">Publish Event</button>
                 </div>
+                <button class="formFields2">Publish Event</button>
             </form>
         </div>
     </main>
