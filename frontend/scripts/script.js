@@ -31,7 +31,7 @@ function actions() {
 
 
     for (let i = 0; i < color.length; i++) {
-        document.querySelectorAll(".planBox")[i].style.outline = `1px solid ${color[i]}`;
+        document.querySelectorAll(".planBox")[i].style.outline = `solid 1px ${color[i]}`;
         document.querySelectorAll(".planInfo")[i].style.backgroundColor = color[i];
     }
 
