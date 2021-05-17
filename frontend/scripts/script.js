@@ -9,23 +9,18 @@ function actions() {
 
     document.querySelector("#friday").onscroll = myFunction;
 
-    var colorz = ["#826c33",
-    "#6753bb",
-    "#569c30",
-    "#ad5ac2",
-    "#958e26",
-    "#6981e3",
-    "#d46e31",
-    "#548fc9",
-    "#c64b37",
-    "#3f9d65",
-    "#996dad",
-    "#3d6b31",
-    "#525c99",
-    "#ba802f",
-    "#3c9a93",
-    "#a66144",
-    "#7c944f"];
+    var colorz = ["#d57629",
+    "#c37c29",
+    "#e3a835",
+    "#b78c1f",
+    "#9fb744",
+    "#4fb231",
+    "#33822a",
+    "#25c76d",
+    "#5281e8",
+    "#9067eb",
+    "#8557bd",
+    "#d255b5"]
 
     color = colorz.sort(() => Math.random() - 0.5);
 

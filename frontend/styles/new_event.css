@@ -360,6 +360,7 @@ nav {
 
 #required h3 {
     margin: 0;
+    margin-left: 16px;
 }
 
 #optional {
@@ -368,6 +369,7 @@ nav {
 
 #optional h3 {
     margin: 0;
+    margin-left: 16px;
 }
 
 #description {
@@ -429,15 +431,23 @@ textarea {
     border: 2px solid #808080;
     width: 62px;
     outline: none;
+    border-radius: 4px;
+}
+label{
+    margin-right: 4px;
 }
 
 #day, #time {
-    background-color: #ededed;
+    background-color: white;
     padding: 4px;
     border: 2px solid #0E4CB0;
     border-radius: 4px;
     width: 62px;
     outline: none;
+}
+
+#day{
+    margin-right: 12px;
 }
 
 #audience {
