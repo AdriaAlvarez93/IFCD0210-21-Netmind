@@ -339,7 +339,7 @@ nav {
     margin: auto;
     margin-top: 32px;
     width: 600px;
-    background-color: #ededed;
+    border: 1px solid #808080;
 }
 
 #createTop {
@@ -353,11 +353,9 @@ nav {
 
 #required {
     padding: 12px 16px 12px 16px;
-    border-bottom: 1px solid #808080;
 }
 #optional{
-    border-bottom: 1px solid #808080;
-    background-color: #d9d9d9;
+    background-color: #ededed;
 }
 
 #required h3 {
@@ -381,12 +379,12 @@ nav {
     margin-left: 8px;
     padding-left: 4px;
     padding-right: 4px;
-    background-color: #ededed;
+    background-color: white;
 }
 
 textarea {
     outline: none;
-    background-color: #ededed;
+    background-color: white;
     padding: 12px;
     margin-top: 10px;
     border: 2px solid #0E4CB0;
@@ -420,13 +418,13 @@ textarea {
 
 #location {
     border: none;
-    background-color: #d9d9d9;
+    background-color: #ededed;
     border-bottom: 2px solid #808080;
     outline: none;
 }
 
 #maxAttendees {
-    background-color: #d9d9d9;
+    background-color: #ededed;
     padding: 4px;
     border: 2px solid #808080;
     width: 62px;
