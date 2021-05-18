@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+form {
+    width: 50%;
+    background: cyan;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    margin: 6px 0;
+    width: 80%;
+}
