@@ -18,6 +18,7 @@ html, body {
 /* Body */
 
 body {
+    background: #ededed;
     position: relative;
     margin: 0 auto;
     height: 100%;
@@ -46,19 +47,25 @@ h2 {
 /* HEADER */
 
 header {
-    height: 48px;
     position: relative;
     display: flex;
-    background: #bfbfbf;
+    width: 100%;
+    height: 128px;
+    align-items: center;
 }
 
 /* LOGO */
 
 #logo {
-    height: 48px;
     margin: auto;
-    order: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo a{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -66,88 +73,93 @@ header {
 #logoIcon {
     vertical-align: text-bottom;
     pointer-events: none;
-    width: 38px;
+    width: 76px;
     margin-right: 2px;
 }
 
 #logoText {
     display: inline-block;
-    margin-bottom: 8px;
-    margin-top: 8px;
+    margin: 0;
     color: black;
+}
+
+#signin{
+ position: absolute;
+ top: 16px;
+ right: 16px;
+}
+#signin button{
+    background-color: none;
+    border: 2px solid #0E4CB0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #0E4CB0;
+    
+}
+
+#login button{
+    width: 100%;
+    height: 36px;
+    background-color: #0E4CB0;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+}
+
+#submit{
+    margin: 8px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#login{
+    box-sizing: border-box;
+    background-color: white;
+    min-width: 400px;
+    border: thin solid #bfbfbf;
+    border-radius: 16px;
+}
+#title{
+    border-bottom: 1px solid #bfbfbf;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title h2{
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    
+}
+
+#mail, #pass{
+    box-sizing: border-box;
+    height: 36px;
+    width: 100%;
+}
+#inputs div{
+    box-sizing: border-box;
+    margin: 10px;
+    display: flex;
+}
+#inputs img{
+    margin-right: 8px;
+}
+input{
+    border-radius: 6px;
+    border: 1px solid #bfbfbf;
+    padding: 10px;
 }
 
 /* Hidden Ham */
-
-#ham {
-    display: none;
-}
-
-/* Search */
-
-#search {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    order: 0;
-}
-
-#searchField {
-    color: black;
-    margin-left: 4px;
-    outline: none;
-    flex-grow: 1;
-    background: none;
-    font-size: 1em;
-    padding-left: 12px;
-    padding-right: 12px;
-    border: none;
-    height: 40px;
-    border-radius: 32px;
-    border: 2px solid black;
-}
-
-#searchField:focus {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid #0E4CB0;
-}
-
-#searchField::-webkit-input-placeholder {
-    color: black;
-    opacity: 0.5;
-}
-
-#searchField::placeholder {
-    color: black;
-    opacity: 0.5;
-}
-
-#submitSearch {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background: transparent;
-    height: 40px;
-    min-width: 40px;
-    border-radius: 20px;
-    margin-left: 5px;
-    padding: 0;
-}
-
-#submitSearch:hover {
-    background: #0E4CB0;
-}
-
-#submitSearch svg {
-    fill: black;
-}
-
-#submitSearch:hover svg {
-    fill: white;
-}
-
-/* Main Menu */
 
 #menuItems {
     margin-left: auto;
@@ -496,6 +508,7 @@ label {
 }
 .c1{
     top: 14px;
+    background-color: green;
 }
 .c2{
     top: 49px;
