@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex
+   
+}
+header div{ /* CABECERA GENERAL*****/
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(190, 23, 23);
+    
+}
+
+img{  /* IMAGEN ******/
+    width: 200px;
+    height: 100px;
+} 
+
+#opccabe {  /* MENÚ DE CABECERA *****************/
+    width:1000px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {    /*  QUITA LOS PUNTOS DE LAS OPCIONES ***************/
+    list-style:none;
+}
+
+.nav {      /* DISPONE LAS OPCIONES EN LÍNEA ************************/
+    display: flex;
+}
+
+.nav li a { /* ESTILAMOS CADA UNA DE LAS OPCIONES **********************/
+    background: rgb(190, 23, 23);   /* Fondo Rojo *********/
+    color:#fff;                     /* Color de texto Blanco ************/
+    text-decoration:none;             /* Quitamos el subrayado ************/
+    padding: 10px 20px;        /* Separación entre ellos y las sub-opciones 10px 
+                                 verticalmente, 20px horizontalmente***********/
+    display:block;              /* Respeta el espacio de cada sub-opción *******/
+
+}
+
+
+.nav li a:hover {   /* COLOR DE FONDO DE LAS OPCIONES Y SUB-OPCIONES *******/
+    background-color: black;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+/************************************************************************
+*********************              MAIN            **********************
+************************************************************************/
+#overlay {                                  
+    height: 100%;                          /* El solapador ocupará la totalidad de la caja1*/
+    background-color: rgba(0, 0, 0, .5); /* El color será negro con un brillo del .5*/
+   
+}
+
+h2 {                       
+    color: white;
+    border-style: solid;
+    font-variant: small-caps;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+   
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+  
+}
+
+main div{
+    display: flex;
+    
+}
+#Tejercicio{
+    background: rgb(190, 23, 23);
+    color:white;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#ejercicios, #personal{
+    display:flex;
+ 
+    
+} 
+
+/* Posicionamiento de las imágenes */
+#ejercicios img, #personal  img{
+    width: 369px;
+    height: 150px;
+    padding: 1px 15px;
+    background: rgb(5, 1, 1);
+    cursor: pointer;
+    
+}
+
+
+/* Posicionamiento de los párrafos */
+#ejercicios p, #personal p{
+    width: 81px;
+    height: 150px;
+    padding: 7px 1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(8, 1, 1);
+    color:white;
+    background: rgb(0, 0, 0);
+    
+}
+
+/************************************************************************
+*********************              PIE            **********************
+************************************************************************/
+footer{
+    height: 200px;
+    background-color: darkred;
+    
+}
+footer p{
+    justify-content: center;
+    align-items:  center;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 500px;
+}
