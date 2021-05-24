@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="Reservas.css">
+    <script type="text/javascript" src="Reservas.js"></script>
+</head>
+<body>
+    <form novalidate>
+        <div id="CajaReserva">
+            <img src="gym.JPG" alt="imagen" id="logo">
+            <div id="Btn">
+                <input type="submit" value="Reserva">
+            </div>
+            <h2>Reserva de clase</h2>
+            <div id="NUsuario">
+                <label>Usuario:</label>
+                <input type="text" id="IDUsuario">
+                <span class="error"></span>
+            </div>
+              
+            <div id="Tel">
+                <label>Teléfono:</label>
+                <input type="text" id="Tfn" placeholder="Tel (9 Números)">
+                <span class="error"></span>
+            </div>
+            <div id="Fecha">
+                <label>Fecha:</label>
+                <input type="date" name="" id="fecha"> 
+                <span class="error"></span>
+            </div>
+            <div id="Hora">
+                <label>Hora:</label>
+                <input type="text" id="hora" >
+                <span class="error"></span>
+            </div>
+            
+            <div id="aadd">
+                <label for="aadd">Actividades dirigidas:</label>
+                <select id="ops">
+                    <option>[Selecciona]</option>
+                    <option>Body Pump</option>
+                    <option>Body Combat</option>
+                    <option>Zumba</option>
+                    <option>Cycling</option>
+                    <option>AquaFitness</option>
+                </select>
+                <span class="error"></span>
+            </div>
+                  
+        </div>
+    </form>
+    
+</body>
+</html>

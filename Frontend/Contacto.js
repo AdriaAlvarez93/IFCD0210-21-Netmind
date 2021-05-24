@@ -23,10 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /** Declaramos la variable 'nom' contenedora de la caja INPUT con id="nom" */
     let nom = document.getElementById("Nom");
 
-    /** Declaramos la variable 'errornom' contenedora de la caja SPAN de clase ".errornom" */
-    // let errornom = document.querySelector(".errornom");
-
-    /***** Evalua si está informado el campo NOM *****/     
+        /***** Evalua si está informado el campo NOM *****/     
         if (nom.value == ""){
             span[0].innerHTML = "Rellena el campo nombre";
             nom.classList.add("invalid");
@@ -42,10 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /** Declaramos la variable 'nom' contenedora de la caja INPUT con id="nom" */
     let cognom = document.getElementById("Ape");
 
-    /** Declaramos la variable 'errornom' contenedora de la caja SPAN de clase ".errornom" */
-    // let errornom = document.querySelector(".errornom");
-
-    /***** Evalua si está informado el campo NOM *****/     
+    /***** Evalua si está informado el campo COGNOM *****/     
         if (cognom.value == ""){
             span[1].innerHTML = "Rellena el campo apellido";
             cognom.classList.add("invalid");
@@ -60,9 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /** Declaramos la variable 'nom' contenedora de la caja INPUT con id="nom" */
     let cp = document.getElementById("Cod");
-
-    /** Declaramos la variable 'errornom' contenedora de la caja SPAN de clase ".errornom" */
-    // let errornom = document.querySelector(".errornom");
 
     /***** Evalua si está informado el campo NOM *****/     
         if (cp.value == ""){
@@ -86,9 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /** Declaramos la variable 'nom' contenedora de la caja INPUT con id="nom" */
     let tlf = document.getElementById("Tfn");
-
-    /** Declaramos la variable 'errornom' contenedora de la caja SPAN de clase ".errornom" */
-    // let errornom = document.querySelector(".errornom");
 
     /***** Evalua si está informado el campo NOM *****/     
         if (tlf.value == ""){

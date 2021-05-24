@@ -4,10 +4,10 @@
 }
 
 /* Estilo para la caja contenedora */
-#CajaContacto{
+#CajaReserva{
     
     width: 470px;
-    height: 450px;
+    height: 650px;
     margin-left: 400px;
     background: #dc2d22;
     border-radius: 15px;
@@ -26,42 +26,23 @@ img{
 }
 
 /* Estilo para las etiquetas  */
-#Nombre, #Apellido, #CP, #Tel, #Email{
+#NUsuario, #Tel, #Fecha, #Hora, #aadd {
     margin-top: 20px;
     box-shadow: 8px 8px 10px rgba(0,0,0,0.32);
-    
+    width: 350px;
+    font-size: 20px;
 }
 
-/* Estilo para input Nombre y Apellido */
-#Nom, #Ape {
-    width: 304px;
+/* INPUT's */
+#Tfn, #IDUsuario, #hora, #ops{
+    font-size: 20px;
     margin-left: 50px;
-    font-size: 15px;
-    
-}
 
-/* Estilo para input Código Postal */
-#Cod{
-    width: 304px;
-    margin-left: 7px;
-    font-size: 15px;
-    
 }
-
-/* Estilo para input Teléfono */
-#Tfn{
-    width: 303px;
-    margin-left: 47px;
-    font-size: 15px;
-    
-}
-
-/* Estilo para input Email */
-#mail{
-    width: 303px;
-    margin-left: 62px;
-    font-size: 15px;
-    
+#fecha{
+    font-size: 20px;
+    margin-left: 104px;
+    color:grey
 }
 
 /* Estilo para el botón */
@@ -90,7 +71,7 @@ input[type=submit]:hover {
 }
 
 .invalid {
-    border: 1px solid rgb(23, 0, 153) !important;
+    border: 1px solid rgb(23, 0, 153);
     background-color: rgb(10, 8, 8);
     color: white;
 }
