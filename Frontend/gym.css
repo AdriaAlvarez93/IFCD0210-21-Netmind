@@ -143,12 +143,21 @@ main div{
 footer{
     height: 200px;
     background-color: darkred;
+    display: flex;
     
 }
-footer p{
+footer div{
     justify-content: center;
     align-items:  center;
     color:white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 500px;
+    margin-left: 100px;
 }
+#horario{
+    justify-content: center;
+    align-items:  center;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 300px;
+}
+
