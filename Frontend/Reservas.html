@@ -5,54 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
-    <link rel="stylesheet" href="Reservas.css">
+    <link rel="stylesheet" href="css/Reservas.css">
     
 </head>
-<body>
-    <form novalidate>
-        <div id="CajaReserva">
-            <img src="gym.JPG" alt="imagen" id="logo">
-            <div id="Btn">
-                <input type="submit" value="Reserva">
-            </div>
-            <h2>Reserva de clase</h2>
-            <div id="NUsuario">
-                <label>Usuario:</label>
-                <input type="text" id="IDUsuario">
-                <span class="error"></span>
-            </div>
-              
-            <div id="Tel">
-                <label>Teléfono:</label>
-                <input type="text" id="Tfn" placeholder="Tel (9 Números)">
-                <span class="error"></span>
-            </div>
-            <div id="Fecha">
-                <label>Fecha:</label>
-                <input type="date" name="" id="fecha"> 
-                <span class="error"></span>
-            </div>
-            <div id="Hora">
-                <label>Hora:</label>
-                <input type="text" id="hora" >
-                <span class="error"></span>
-            </div>
-            
-            <div id="aadd">
-                <label for="aadd">Actividades dirigidas:</label>
-                <select id="ops">
-                    <option>[Selecciona]</option>
-                    <option>Body Pump</option>
-                    <option>Body Combat</option>
-                    <option>Zumba</option>
-                    <option>Cycling</option>
-                    <option>AquaFitness</option>
-                </select>
-                <span class="error"></span>
+<body >
+    <!--  MENÚ PRINCIPAL CABECERA   -->
+    <header>
+		<div>
+			<img src="img/Gym.jpg" alt="logo">
+		</div>
+		<div id="opccabe">
+			<ul class="nav">
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="">EQUIPO_HUMANO</a></li>
+				<li><a href="">CENTRO</a>
+					<ul>
+						<li><a href="">Sala de fitness</a></li>
+						<li><a href="">Sala actividades dirigidas</a></li>
+						<li><a href="">Piscina</a></li>
+						<li><a href="">Pistas de padel</a></li>
+					</ul>
+				</li>
+				<li><a href="">SERVICIOS</a>
+					<ul>
+						<li><a href="">Cafetería</a></li>
+						<li><a href="">Guardería</a></li>
+						<li><a href="">Parking</a></li>
+						<li><a href="">Masajes</a></li>
+					</ul>
+				</li>
+				<li><a href="">ACTIVIDADES</a>
+					<ul>
+						<li><a href="">Body Pump</a></li>
+						<li><a href="">Body Combat</a></li>
+						<li><a href="">Zumba</a></li>
+						<li><a href="">Cycling</a></li>
+						<li><a href="">AquaFitness</a></li>
+						<li><a href="Reservas.html">**Reservar**</a></li>
+					</ul>
+				</li>
+				<li><a href="Contacto.html">CONTACTO</a></li>
+			</ul>
+		</div>
+	</header>
+    <!--  FIN MENÚ PRINCIPAL -->
+    <!--***********************************************************************************-->
+    <!-- FORMULARIO -->
+    <main>
+        <form novalidate>
+            <div id="CajaReserva">
+                <img src="img/gym.JPG" alt="imagen" id="logo">
+                <div id="Btn">
+                    <input type="submit" value="Reserva">
+                </div>
+                <h2>Reserva de clase</h2>
+                <div id="NUsuario">
+                    <label>Usuario:</label>
+                    <input type="text" id="IDUsuario">
+                    <span class="error"></span>
+                </div>
+                  
+                <div id="Tel">
+                    <label>Teléfono:</label>
+                    <input type="text" id="Tfn" placeholder="Tel (9 Números)">
+                    <span class="error"></span>
+                </div>
+                <div id="Fecha">
+                    <label>Fecha:</label>
+                    <input type="date" name="" id="fecha"> 
+                    <span class="error"></span>
+                </div>
+                <div id="Hora">
+                    <label>Hora:</label>
+                    <input type="text" id="hora" >
+                    <span class="error"></span>
+                </div>
                 
-            </div>
-            <input type="button" value="Volver">      
-    </form>
-    <script type="text/javascript" src="Reservas.js"></script>
+                <div id="aadd">
+                    <label for="aadd">Actividades dirigidas:</label>
+                    <select id="ops">
+                        <option>[Selecciona]</option>
+                        <option>Body Pump</option>
+                        <option>Body Combat</option>
+                        <option>Zumba</option>
+                        <option>Cycling</option>
+                        <option>AquaFitness</option>
+                    </select>
+                    <span class="error"></span>
+                    
+                </div>
+                      
+        </form>
+    </main>
+    <footer>
+		<div id="direccion">
+			<p>
+
+				<br><br>
+			<h4>Donde estamos:</h4><br>Av. Don Pelayo, 25<br><br> 05002 Ávila <br><br> Tel: 14 256 87 14
+			</p>
+
+		</div>
+		<div id="horario">
+			<p>
+
+				<br><br>
+			<h4>Nuestro horario:</h4><br>Lun-Vie: 07:00-22:00h<br><br>Sab-Dom: 09:00-09:00<br><br> Tel: 14 256 87 14
+			</p>
+
+		</div>
+
+	</footer>    
+        
+    
+    <script type="text/javascript" src="js/Reservas.js"></script>
+    
 </body>
 </html>

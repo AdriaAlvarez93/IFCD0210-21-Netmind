@@ -20,20 +20,89 @@
 
 /* Estilo para la imagen de fondo */
 
-body{
+body {
     width: 100%;
     height: 100%;
-    background: url(inicio2.jpg);
+    background: url(../img/inicio2.jpg);
     background-size: cover; 
 
 }
 
-/* Estilo para la imagen */
+/* Estilo para la imagen logo y fondo*/
 img{
     width: 120px;
     height: 50px;
     box-shadow: 8px 8px 10px rgba(0,0,0,0.32);
 }
+/***************  MENÚ DE CABECERA *******************************/
+header{
+    display:flex
+   
+}
+header div{ /* CABECERA GENERAL*****/
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(190, 23, 23);
+    
+}
+
+img{  /* IMAGEN ******/
+    width: 200px;
+    height: 100px;
+} 
+
+#opccabe {  /* MENÚ DE CABECERA *****************/
+    width:1000px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {    /*  QUITA LOS PUNTOS DE LAS OPCIONES ***************/
+    list-style:none;
+}
+
+.nav {      /* DISPONE LAS OPCIONES EN LÍNEA ************************/
+    display: flex;
+}
+
+.nav li a { /* ESTILAMOS CADA UNA DE LAS OPCIONES **********************/
+    background: rgb(190, 23, 23);   /* Fondo Rojo *********/
+    color:#fff;                     /* Color de texto Blanco ************/
+    text-decoration:none;             /* Quitamos el subrayado ************/
+    padding: 10px 20px;        /* Separación entre ellos y las sub-opciones 10px 
+                                 verticalmente, 20px horizontalmente***********/
+    display:block;              /* Respeta el espacio de cada sub-opción *******/
+
+}
+
+
+.nav li a:hover {   /* COLOR DE FONDO DE LAS OPCIONES Y SUB-OPCIONES *******/
+    background-color: black;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+/***************  FIN MENÚ DE CABECERA ***************************/
 
 /* Estilo para las etiquetas  */
 #NUsuario, #Tel, #Fecha, #Hora, #aadd {
@@ -84,4 +153,28 @@ input[type=submit]:hover {
     border: 1px solid rgb(23, 0, 153);
     background-color: rgb(10, 8, 8);
     color: white;
+}
+
+/************************************************************************
+*********************              PIE            **********************
+************************************************************************/
+footer{
+    height: 200px;
+    background-color: darkred;
+    display: flex;
+    
+}
+footer div{
+    justify-content: center;
+    align-items:  center;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 100px;
+}
+#horario{
+    justify-content: center;
+    align-items:  center;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 300px;
 }

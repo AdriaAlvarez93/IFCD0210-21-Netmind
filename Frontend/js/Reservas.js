@@ -128,14 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
             span[4].innerHTML="";
         }
         
-        /**************************************************** */
-        /****************  VOLVER *************************** */
-        /**************************************************** */
-
-        const btn_volver = document.querySelector('input[type=button]')
-        btn_volver.addEventListener('click', () => {
-            console.log("hola");
-        })
+        
                 
     })
     
