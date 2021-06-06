@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    <form>
-        
-        <h3>Regístrate y empezamos</h3>
-        <div class="campos">
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Apellidos">
-        <input type="email" placeholder="Email" id="">
-        <input type="text" placeholder="Nombre de usuario">
-        <input type="password" name="" id="" placeholder="Password">
-        <label for="start">Fecha de nacimiento:</label>
-        <input type="date" id="start" placeholder="Fecha de nacimiento"
-               min="1920-01-01" max="2018-12-31">
-        <input type="text" placeholder="Lugar de residencia">
-        <textarea name="Zonas de riding" rows="5" cols="40" placeholder="Zonas de riding..."></textarea>
-        
-        <label for="zona">Cuando salgo a patinar...</label>
-        <select name="zona_riding" id="zona">
-            <option value="disabled">Elige una opción</option>
-            <option value="Skate and destroy">Skate and destroy</option>
-            <option value="Happy riding">Happy riding</option>
-            <option value="To perfect">To perfect</option>
-            <option value="Learning, in my sauce">Learning, in my sauce</option>
-            <option value="Beginning :D">Beginning :D</option>
-         </select>
-        </div>
-         <div class="zona_confort">
-            <h4>Mi zona de confort</h4>
-
-             <input type="checkbox" id="cbox1" value="first_checkbox"> 
-             <label for="cbox1">Transitions</label>
-             <input type="checkbox" id="cbox2" value="second_checkbox"> 
-             <label for="cbox2">Street</label>
-             <input type="checkbox" id="cbox3" value="third_checkbox"> 
-             <label for="cbox3">Flats</label>
-             <input type="checkbox" id="cbox4" value="fourth_checkbox"> 
-             <label for="cbox4">Skatepark</label>
-            </div>
-            <input type="submit" value="Enviar">
-    </form>
     
+</head>
+
+<body>
+    <img src="Logo.png" alt="">
+    <form id="formAcceder" novalidate>
+        <h2>Acceder</h2>
+        <label for="email">Nombre de usuario o email</label>
+        <input type="email" name="" id="emailA" class="inputs">
+        <span></span>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="" id="contrA" class="inputs">
+        <span></span>
+        <div>
+            <button id="btnA">Acceder</button>
+            <input type="checkbox" name="" id="recuerdame">
+            <label for="recuerdame">Recuérdame</label>
+        </div>
+        <a href="#">¿Olvidasete la contraseña?</a>
+    </form>
+    <form id="formRegistro" novalidate>
+        <h2>Registrar</h2>
+        <label for="nombre"> Nombre de usuario</label>
+        <input type="text" name="" id="nombre" class="inputs">
+        <span></span>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email" class="inputs">
+        <span></span>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="" id="contraseña" class="inputs">
+        <span></span>
+        <button id="btnR">Registrar</button>
+    </form>
+    <script src="index.js"></script>
 </body>
+
 </html>

@@ -2,24 +2,88 @@
     margin: 0;
     box-sizing: border-box;
 }
-body, html {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
+html, body {
+    height: 100%;
+    background-image: url(image1.jpg) ;
+     background-color: #cccccc;
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:sans-serif;
+} 
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-form {
-    width: 50%;
-    background: cyan;
-    padding: 20px;
+
+#formAcceder {
+    width: 25%;
+    height: 40%;
+    margin-top: 200px;
+    padding: 15px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: rgb(76, 76, 77);
+    margin-right: 35px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    opacity: 0.8;
 }
-input {
-    margin: 6px 0;
+
+#formRegistro {
+    width: 25%;
+    height: 40%;
+    margin-top: 200px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(77, 76, 76);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+label {
+    margin-top: 10px;
+    font-size: large;
+    
+}
+
+.inputs {
     width: 80%;
+    background-color: rgb(241, 248, 234);
+    border-radius: 5px;
+}
+
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 40%;
+    height: 35px;
+    font-size: medium;
+    margin-top: 20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+a {
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+}
+img {
+    width: 500px;
+    position: absolute;
+    margin: -200px -550px;
+    opacity: 0.9;
+}
+span {
+    color: rgb(255, 0, 0);
 }
