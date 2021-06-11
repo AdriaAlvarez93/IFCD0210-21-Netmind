@@ -1,0 +1,1 @@
+import getweathericon from './clima img'
