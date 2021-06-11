@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return  
         } else if (!re_tlf.test(tlf.value)){
             // el método "test" evaluar mediante una Expresión Regular si se cumple o no devolviendo un "true" o "false" respectivamente
-            span[1].textContent = "El teléfono es incorrecto"
+            span[1].innerHTML = "El teléfono es incorrecto"
             tlf.classList.add("invalid")
             e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor 
             return  
@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
         /***** Evalua si está informado el campo AADD *****/     
         if (ops.value == "[Selecciona]"){
             span[4].innerHTML = "Rellena el campo AADD";
+            span[4].style.display = 'block';
             ops.classList.add("invalid");
             e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor
             return   

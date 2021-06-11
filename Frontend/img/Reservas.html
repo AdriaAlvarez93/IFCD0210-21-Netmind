@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="css/Contacto.css">
-    <script type="text/javascript" src="js/Contacto.js"></script>
+    <title>Reservas</title>
+    <link rel="stylesheet" href="css/Reservas.css">
+    
 </head>
-<body>
-     <!--  MENÚ PRINCIPAL CABECERA   -->
+<body >
+    <!--  MENÚ PRINCIPAL CABECERA   -->
     <header>
 		<div>
-			<img src="img/Gym.jpg" alt="logo">
+			<img src="img/gym.jpg" alt="logo">
 		</div>
 		<div id="opccabe">
 			<ul class="nav">
@@ -52,53 +52,53 @@
     <!--***********************************************************************************-->
     <!-- FORMULARIO -->
     <main>
-		
         <form novalidate>
-            <div id="CajaContacto">
-                <img src="img/contacto3.jpg" alt="logo">
+            <div id="CajaReserva">
+                <img src="img/reserva.JPG" alt="imagen" id="logo">
                 <div id="Btn">
-                    <input type="submit" value="Contactar">
+                    <input type="submit" value="Envía">
                 </div>
-                <h2>Solicitud información</h2>
-				
-                
-                <div id="Nombre">
-                    <label>Nombre:</label>
-                    <input type="text" id="Nom">
+                <h2>Reserva de clase</h2>
+                <div id="NUsuario">
+                    <label>Usuario:</label>
+                    <input type="text" id="IDUsuario">
                     <span class="error"></span>
                 </div>
-                <div id="Apellido">
-                    <label>Apellido:</label>
-                    <input type="text" id="Ape">
-                    <span class="error"></span>
-                </div>
-                <div id="CP">
-                    <label>Código Postal:</label>
-                    <input type="text" id="Cod" placeholder="CP (3-5 Números)">
-                    <span class="error"></span>
-                </div>
+                  
                 <div id="Tel">
                     <label>Teléfono:</label>
                     <input type="text" id="Tfn" placeholder="Tel (9 Números)">
                     <span class="error"></span>
                 </div>
-                <div id="Email">
-                    <label>E-mail:</label>
-                    <input type="email" id="mail" placeholder="Email (xxxxxx@xxxxxxxx.xx)">
+                <div id="Fecha">
+                    <label>Fecha:</label>
+                    <input type="date" name="" id="fecha"> 
                     <span class="error"></span>
                 </div>
-							
-				
-            </div>
-			
+                <div id="Hora">
+                    <label>Hora:</label>
+                    <input type="text" id="hora" >
+                    <span class="error"></span>
+                </div>
+                
+                <div id="aadd">
+                    <label for="aadd">Actividades dirigidas:</label>
+                    <select id="ops">
+                        <option>[Selecciona]</option>
+                        <option>Body Pump</option>
+                        <option>Body Combat</option>
+                        <option>Zumba</option>
+                        <option>Cycling</option>
+                        <option>AquaFitness</option>
+                    </select>
+                    <span class="error"></span>
+                    
+                </div>
+                      
         </form>
-		
-			
-		
-	</main>         
+    </main>
     <footer>
 		<div id="direccion">
-				
 			<p>
 
 				<br><br>
@@ -115,7 +115,10 @@
 
 		</div>
 
-	</footer>
+	</footer>    
+        
+    
+    <script type="text/javascript" src="js/Reservas.js"></script>
     
 </body>
 </html>

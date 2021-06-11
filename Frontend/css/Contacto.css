@@ -4,7 +4,7 @@
 }
 
 /* Estilo para la caja contenedora */
-#CajaContacto{
+#CajaContacto, #CajaContacto2{
     
     width: 470px;
     height: 450px;
@@ -18,15 +18,15 @@
 
 }
 
+
 /* Estilo para la imagen de fondo */
   
 
 body{
     width: 100%;
     height: 100%;
-    background: url(../img/inicio2.jpg);
-    background-size: cover; 
-
+    background: url(../img/pt.jpg);
+    background-size: cover;
 }
 
 /* Estilo para la imagen logo y fondo*/
@@ -106,6 +106,7 @@ ul, ol {    /*  QUITA LOS PUNTOS DE LAS OPCIONES ***************/
 
 /***************  FIN MENÚ DE CABECERA ***************************/
 
+
 /* Estilo para las etiquetas  */
 #Nombre, #Apellido, #CP, #Tel, #Email{
     margin-top: 20px;
@@ -164,6 +165,10 @@ input[type=submit]:hover {
     color: white;
 }
 
+h4{
+    color:#fff;
+}
+
 /* Estilo para Errores */
 .error { 
     font-size: 75%;
@@ -186,11 +191,12 @@ footer{
     
 }
 footer div{
-    justify-content: center;
-    align-items:  center;
+    justify-content:center;
     color:white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 100px;
+    
+   
 }
 #horario{
     justify-content: center;

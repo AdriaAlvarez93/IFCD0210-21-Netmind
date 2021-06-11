@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //console.log(span);
     const form = document.querySelector("form")
+
+    //caja con mensaje de envio correcto
+    const caja2 = document.getElementById("CajaContacto")
+ 
+       
     // console.log(form) 
     // Indicamos las expresiones regulares aquí:
     const re_email = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/
@@ -12,26 +17,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // recogida campos 
     const email = document.querySelector("input[type=email]")
-    // console.log(email.value)
     
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('click', (e) => {
+     
         
-    
         /*************************************************** */
         /******* NOM **************/
         /*************************************************** */
 
         /** Declaramos la variable 'nom' contenedora de la caja INPUT con id="nom" */
         let nom = document.getElementById("Nom");
-
-            /***** Evalua si está informado el campo NOM *****/     
+        /***** Evalua si está informado el campo NOM *****/     
             if (nom.value == ""){
                 span[0].innerHTML = "Rellena el campo nombre";
                 nom.classList.add("invalid");
                 e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor   
+                return
             } else {
                 nom.classList.remove("invalid");
                 span[0].innerHTML="";
+                
             }
         /*************************************************** */
         /******* COGNOM **************/
@@ -44,7 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (cognom.value == ""){
                 span[1].innerHTML = "Rellena el campo apellido";
                 cognom.classList.add("invalid");
-                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor   
+                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor
+                return   
             } else {
                 cognom.classList.remove("invalid");
                 span[1].innerHTML="";
@@ -60,13 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
             if (cp.value == ""){
                 span[2].innerHTML = "Rellena el campo código postal";
                 cp.classList.add("invalid");
-                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor   
+                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor
+                return   
             } // formato incorrecto? 
             else if (!re_cp.test(cp.value)){
                 // el método "test" evaluar mediante una Expresión Regular si se cumple o no devolviendo un "true" o "false" respectivamente
                 span[2].textContent = "El código postal tiene un formato incorrecto"
                 cp.classList.add("invalid")
-                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor   
+                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor
+                return   
             }
             else {
                 cp.classList.remove("invalid");
@@ -83,12 +91,14 @@ document.addEventListener("DOMContentLoaded", () => {
             if (tlf.value == ""){
                 span[3].innerHTML = "Rellena el campo teléfono";
                 tlf.classList.add("invalid");
-                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor   
+                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor
+                return   
             } else if (!re_tlf.test(tlf.value)){
                 // el método "test" evaluar mediante una Expresión Regular si se cumple o no devolviendo un "true" o "false" respectivamente
                 span[3].textContent = "El teléfono tiene un formato incorrecto"
                 tlf.classList.add("invalid")
-                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor   
+                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor
+                return   
             } else {
                 tlf.classList.remove("invalid");
                 span[3].innerHTML="";    
@@ -103,25 +113,27 @@ document.addEventListener("DOMContentLoaded", () => {
             if (email.value.length === 0) {
                 span[4].textContent = "Rellena el campo email"
                 email.classList.add("invalid")
-                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor   
+                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor
+                return   
             } // formato incorrecto? 
             else if (!re_email.test(email.value)){
                 // el método "test" evaluar mediante una Expresión Regular si se cumple o no devolviendo un "true" o "false" respectivamente
                 span[4].textContent = "El email tiene un formato incorrecto"
                 email.classList.add("invalid")
-                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor   
+                e.preventDefault(); // cancela el envío de datos o refresco del navegador al sevidor
+                return   
             } else {
                 email.classList.remove("invalid")
                 span[4].textContent = ""
+                
+                        
             }
-        
-     
+            caja2.innerHTML = "Solicitud de información enviada correctamente";          
             
     })
-
    
-
-        // Controla mientras se escribe
+    
+    // Controla mientras se escribe
         email.addEventListener('keyup', () => {
             
             if (email.value.length != 0 && !re_email.test(email.value)) {
@@ -132,11 +144,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     span[4].textContent = ""
                 
                 }
-
-                
         })
-    
-
-
-    
+       
 })
