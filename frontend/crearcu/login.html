@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crear cuenta</title>
+    <link rel="shortcut icon" href="../img/a0cda0d495c242a29774ea06459b6b96 (1).png" />
     <link rel="stylesheet" href="cuenta.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap" rel="stylesheet">
+    <script src="cuenta.js"></script>
+
 </head>
 
 <body>
 
     <header>
         <div class="logo">
-            <a  href="index.html"><img src="img/a0cda0d495c242a29774ea06459b6b96.png" alt="logo" /></a>
+            <a  href="../index.html"><img src="../img/a0cda0d495c242a29774ea06459b6b96.png" alt="logo" /></a>
          
         </div>
     </header>
@@ -25,32 +28,44 @@
             <div class=_33porciento>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre">
+                <span class="error"></span>
             </div>
+            
             <div class="_33porciento">
                 <label for="segundo">Segundo Nombre:</label>
                 <input type="text" id="segundo">
-            </div>
 
+            </div>
+            
 
             <div class="_33porciento">
                 <label for="apellido">Apellido:</label>
                 <input type="text" id="apellido">
+                <span class="error"></span>
             </div>
+
+           
 
         </div>
         <div class=_100porciento>
             <label for="correo">Correo electronico:</label>
             <input type="email" id="correo">
+            <span class="error"></span>
         </div>
+
+
+
         <div class="contenidodis">
             <div class=input50>
                 <label for="contraseña">Contraseña:</label>
                 <input type="password" id="contraseña">
+                <span class="error"></span>
             </div>
 
             <div class=input50>
                 <label for="recontraseña">Repetir Contraseña:</label>
                 <input type="password" id="recontraseña">
+                <span class="error"></span>
             </div>
 
             <div class=input50>
@@ -304,7 +319,7 @@
 
 
     <div class=button>
-         <input type="submit" value="CREAR CUENTA">
+         <input type="submit" value="CREAR CUENTA" id="btn">
      </div>
 
 

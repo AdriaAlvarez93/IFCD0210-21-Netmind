@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="shortcut icon" href="../img/a0cda0d495c242a29774ea06459b6b96 (1).png" />
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="inicio.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a  href="../index.html"><img src="../img/logo.png" alt="logo" ></a>
+         
+        </div>
+    </header>
+
+    <main>
+        <form novalidate class="contenedor">
+            <div>
+                <label for="correo">Correo:</label>
+            <input type="email" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email (xxx@xxxx.xx)"> 
+                <br>
+                <span class="error"></span>
+            </div>
+
+            <div>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password"  id="contraseña" pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="password xxxxx">
+                <br>
+                <span class="error"></span>
+         </div>
+
+         <div class="final">
+                <a href="#">He olvidado mi contraseña</a>
+                <input type="submit" value="INGRESAR">
+         </div>
+
+
+            
+        </form>
+    </main>
+</body>
+</html>
