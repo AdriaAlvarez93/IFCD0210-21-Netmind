@@ -24,7 +24,6 @@ header {
     background-size: cover;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px
-   
 }
 
 .cabecera {
@@ -56,11 +55,21 @@ header div img {
  */
 
 .GastronomicLand_letras {
+    font-size: 100px;
+    font-family: 'Cairo', sans-serif;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 3px grey;
+    color: black
+}
+
+.GastronomicLand_letras_petit {
+    font-size: 10px;
     font-family: 'Cairo', sans-serif;
     flex-wrap: wrap;
     text-align: center;
-    text-size-adjust: auto;
-    text-shadow: 3px grey;
+    text-shadow: 1px grey;
     color: black
 }
 
@@ -119,14 +128,13 @@ body {
 
 /* main 
     /*   padding: 20px; */
-    /* background-color: lightcoral; */
 
+/* background-color: lightcoral; */
 
 .secciones {
     display: flex;
     justify-content: space-around;
     height: 100%;
-    
 }
 
 .main_y_section {
@@ -139,7 +147,6 @@ body {
     column-gap: 20%;
     padding: 20%;
     position: top 1000px;
-    padding: 10px;
     background-color: grey;
 }
 
@@ -147,13 +154,23 @@ body {
    /*  background-color:rgba(201, 83, 103, 0.521);
     padding: 2%;
     margin: 2% */
-.form_contacto{background-color:rgba(201, 83, 103, 0.521);
+
+.form_contacto {
+    width: 70%;
+    /*  -webkit-column-count: 1;
+    -webkit-column-gap: 20%;
+    -moz-column-count: 3;
+    -moz-column-gap: 20%;
+    column-count: 3;
+    column-gap: 20%; */
+    position: top 100px;
+    background-color: rgba(201, 83, 103, 0.521);
     padding: 2%;
     margin: 2%
-
 }
+
 #escribir {
-    height: 50%;
+    height: 80%;
     width: 90%;
 }
 
@@ -184,7 +201,8 @@ footer {
     width: 2px;
     align-items: center;
 } */
-footer div{
+
+footer div {
     display: flex;
     justify-content: space-between;
 }
