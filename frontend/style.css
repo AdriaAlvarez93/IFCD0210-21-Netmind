@@ -17,6 +17,8 @@
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --font: "Raleway", sans-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
 }
 /* **********Reset *****************/
 
@@ -29,17 +31,17 @@ html {
   /* font-size: 62.5%;
      62.5% de 16px = 10px ⇒ 1.6rem = 16px */
 }
-body{
-    margin: 0;
-    overflow-x:hidden;
-    color: var(--text-color);
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
 }
-a{
-    color: var(--link-color);
-    transition: all 0.5s ease-out;
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
 }
-a:hover{
-    opacity: 0.75;
+a:hover {
+  opacity: 0.75;
 }
 *,
 *::after,
@@ -71,8 +73,46 @@ h6 {
   margin: 0;
   font-size: 0.7rem;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  line-height: 1.6;
+}
 /* ********** Components ******* */
+
+/* ********** Menu  ******* */
+.menu-btn{
+  outline: thin solid var(--first-color);
+  border:0;
+  cursor:pointer;
+  background-color: var(--second-color);
+}
+.menu-btn svg{
+  fill: var(--first-color);
+}
+.menu{
+  position: fixed;
+  left: 0;
+  bottom: var(--header-height);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-color);
+}
+.menu a{
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--first-color);
+}
+.menu a:hover{
+  color:var(--white-color);
+  background-color: var(--first-color);
+}
 
 /* ****************Utilities *****************/
 
@@ -80,4 +120,37 @@ h6 {
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
 }
 
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+/* .none{
+  display: none;
+} */
+
 /* ***************Site Styles ************ */
+
+.header{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  padding: 1rem ;
+  width: 100%;
+  height:var(--header-height); /*4rem*/
+  background-color: var(--second-color);
+}
+
+.header>.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a{
+ color: var(--first-color);
+ font-weight: bold;
+ font-size: 2rem;
+ text-decoration: none;
+}
