@@ -81,6 +81,31 @@ p {
   line-height: 1.6;
 }
 /* ********** Components ******* */
+/* ********** Menu  ******* */
+.hero-image{
+  background-image: var(--hero-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: var(--hero-attachment);
+
+}
+
+.hero-image-opacity{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--hero-opacity-color);
+
+}
+
+.hero-image-title{
+  font-size: 7.5vw;
+  color: var(--hero-text-color);
+}
 
 /* ********** Menu  ******* */
 .menu-btn{
@@ -100,6 +125,13 @@ p {
   display: flex;
   flex-direction: column;
   background-color: var(--second-color);
+  opacity: 0;
+  pointer-events: none;
+  transition:opacity 0.5s ease ;
+}
+.menu.is-active{
+  opacity: 1;
+  pointer-events: auto;
 }
 .menu a{
   padding: 1rem;
@@ -114,21 +146,55 @@ p {
   background-color: var(--first-color);
 }
 
+@media screen and (min-width: 1024px) {
+  .menu-btn{
+    display: none;
+  }
+  .menu{
+    position: static;
+    width: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .menu a{
+    padding: 0 1rem;
+  }
+  .menu a:last-child{
+    padding-right: 0;
+  }
+  .menu a:hover{
+    background-color: transparent;
+  }
+}
+
 /* ****************Utilities *****************/
 
 .box-shadow-1 {
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
 }
 
+.btn{
+  border-radius: .5rem;
+  padding: 1rem;
+  display: inline-block;
+  width:200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
+
+}
 .container{
   margin-left: auto;
   margin-right: auto;
   max-width: var(--max-width);
 }
 
-/* .none{
+.none{
   display: none;
-} */
+}
 
 /* ***************Site Styles ************ */
 
@@ -153,4 +219,19 @@ p {
  font-weight: bold;
  font-size: 2rem;
  text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+
+
+}
+@media screen and (min-width: 1024px){
+.header{
+  position: sticky;
+  top: 0;
+  padding: .5rem ;
+  height: calc(var(--header-height)-0.5rem);
+
+}
+
 }

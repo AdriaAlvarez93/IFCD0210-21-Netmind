@@ -17,17 +17,12 @@
     <header class="header">
       <section class="container">
         <div class="logo">
-          <a href="index.html"> JC Villan</a>
+          <a href="index.html"> JuanCarlos</a>
         </div>
         <button class="menu-btn">
-          <svg class="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
+          <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
+
         </button>
         <nav class="menu">
           <a href="#inicio">Inicio</a>
@@ -41,7 +36,17 @@
     </header>
 
     <section id="inicio" class="home">
-      <h2>home</h2>
+      <article class="hero-image" style="--hero-image: url('assets/hero-image-homev1.jpg'); --hero-attachment:fixed;">
+        <aside class="hero-image-opacity" style="--hero-opacity-color:var(--black-alpha-color);" >
+          <div class="hero-image-content">
+            <h2 class="hero-image-title" style="--hero-text-color:var(--white-color);" >Bienvenid@ <br> a mi sitio 
+            
+            </h2>
+            <a href="#contacto" class="btn">Contactame</a>
+          </div>
+        </aside>
+      </article>
+     
     </section>
     <section id="acerca" class="about">
       <h2>acerca</h2>
@@ -61,5 +66,7 @@
     <footer class="footer">
       <small> Sitio desarrollado por Juan Carlos Villan </small>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
