@@ -7,50 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <link rel="stylesheet" href="styles/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/css/estilo-general.css">
-    <!-- <link rel="stylesheet" href="styles/css/index.css"> -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/estilo-general.css">
+    <link rel="stylesheet" href="styles/inicio.css">
 
     <title>proyecto Netmind</title>
 </head>
 
 <body>
-    <!-- <div class="container-fluid cabecera mt-5"> -->
     <div class="container mt-5">
         <div class="cabecera">
             <header class="header" id="header">
                 <div class="textHeader">
-                    <span>Somos especialistas en ofertas de IT</span>
+                    <span class="span-cab">Somos especialistas en ofertas de IT</span>
                 </div>
                 <div class="logo" id="logo">
                     <img src="img/LogoFindJob.png" alt="logo find-job">
                 </div>
                 <div class="textHeader">
-                    <span>Nuestro fin, tu objetivo</span>
+                    <span class="span-cab">Nuestro fin, tu objetivo</span>
                 </div>
             </header>
         </div>
-
-        <!-- </div> -->
-        <!-- <div class="container-fluid main"> -->
-        <!-- <div class="container-fluid"> -->
         <div class="main">
             <main>
-                <div class="card">
+                <div class="card mt-1">
                     <div class="card-body">
-                        <h5 class="card-title">Eres empresa?</h5>
-
-
-                        <a href="#" class="card-link">Inicia Sesión</a>
-                        <a href="#" class="card-link">registra tu empresa</a>
+                        <h2 class="card-title">Eres empresa?</h2>
+                        <button class="btn btn-outline-warning btn-sm" data-toggle="modal"
+                            data-target="#modal-inicio-empresa">Inicia Sesión</button>
+                        <button class="btn btn-outline-warning btn-sm" data-toggle="modal"
+                            data-target="#modal-registro-empresa">registra tu empresa</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Buscas empleo?</h5>
-                        <a href="#" class="card-link">Inicia Sesión</a>
-                        <a href="#" class="card-link">Regístrate</a>
+                        <h2 class="card-title">Buscas empleo?</h2>
+                        <button class="btn btn-outline-warning btn-sm" data-toggle="modal"
+                        data-target="#modal-inicio-usuario">Inicia Sesión</button>
+                        <button class="btn btn-outline-warning btn-sm" data-toggle="modal"
+                        data-target="#modal-registro-usuario">regístrate</button>
                     </div>
                 </div>
             </main>
@@ -58,6 +55,171 @@
 
     </div>
 
+    <!-- VENTANAS MODALES -->
+
+    <!-- Modal inicio Sesión empresa -->
+    <div class="container-fluid">
+        <div class="modal fade modal-inicio-empresa" id="modal-inicio-empresa">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="title-modal">inicia sesión</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+
+                                <input type="email" class="form-control input" placeholder="Introduce email">
+
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control input" placeholder="Password">
+                            </div>
+                            <button type="button" class="btn btn-outline-warning btn-lg btn-block">Entrar</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <span id="emailHelp" class="form-text text-muted"><strong class="info">*Nunca se compartirán tus
+                                datos para fines distintos a los establecidos</strong></span>
+                        <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal inicio Sesión usuario -->
+        <div class="container-fluid">
+            <div class="modal fade modal-inicio-usuario" id="modal-inicio-usuario">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="title-modal">inicia sesión</h3>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+    
+                                    <input type="email" class="form-control input" placeholder="Introduce email">
+    
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control input" placeholder="Password">
+                                </div>
+                                <button type="button" class="btn btn-outline-warning btn-lg btn-block">Entrar</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <span id="emailHelp" class="form-text text-muted"><strong class="info">*Nunca se compartirán tus
+                                    datos para fines distintos a los establecidos</strong></span>
+                            <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Modal Registro Empresa -->
+
+    <div class="container-fluid">
+        <div class="modal fade modal-registro-empresa" id="modal-registro-empresa">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="title-modal">Formulario de Registro</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control input" placeholder="Nombre de la empresa">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control input" placeholder="CIF">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control input" placeholder="Introduce email">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" class="form-control input" placeholder="Teléfono">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control input" placeholder="Contraseña">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control input" placeholder="Confirma Contraseña">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control input" placeholder="Provincia">
+                            </div>
+                            <button type="button" class="btn btn-outline-warning btn-lg btn-block">Registro</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <span id="emailHelp" class="form-text text-muted"><strong class="info">*Nunca se compartirán tus
+                                datos para fines distintos a los establecidos</strong></span>
+                        <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Registro Usuario -->
+
+    <div class="container-fluid">
+        <div class="modal fade modal-registro-usuario" id="modal-registro-usuario">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="title-modal">Formulario de Registro</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control input" placeholder="Nombre y Apellidos">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control input" placeholder="NIF">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control input" placeholder="Introduce email">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" class="form-control input" placeholder="Teléfono">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control input" placeholder="Contraseña">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control input" placeholder="Confirma Contraseña">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control input" placeholder="Provincia">
+                            </div>
+                            <button type="button" class="btn btn-outline-warning btn-lg btn-block">Registro</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <span id="emailHelp" class="form-text text-muted"><strong class="info">*Nunca se compartirán tus
+                                datos para fines distintos a los establecidos</strong></span>
+                        <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
