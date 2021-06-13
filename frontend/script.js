@@ -18,14 +18,13 @@
     */
 
     d.addEventListener("click",(e) => {
-        if(!e.target.matches(".menu a")) return false;
+        if(!e.target.matches(".menu a")) return false;// Si el elemento no es un elemento a dentro de .menu , no pasa nada, sino lo siguiente: 
         btnMenu.firstElementChild.classList.remove("none");
         btnMenu.lastElementChild.classList.add("none");
         menu.classList.remove("is-active");
-    })
-
+    });
 
 
 })
 
-(document);
+(document); //  d == document, asi nos ahorramos el  "document" y lo pasamos por parametro >>> ((d) => {acciones ejecutadas cuando se cargue el documento }(document))

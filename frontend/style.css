@@ -1,4 +1,6 @@
 /* *******Custom Properties *********** */
+/* Nuestras Custom Properties nos dan una soltura a la hora de cambiar elementos comunes en nuestro diseño por ejemplo definimos nuestro color principal y secundario de la pagina, si algun momento deseamos cambiar el color lo unico que sera necesario hacer sera cambiar nuestra varaiable asociada al color principal, y el resto cambiara
+ */
 :root {
   --first-color: #d90062;
   --first-alpha-color: rgba(217, 0, 98, 0.75);
@@ -25,9 +27,16 @@
 html {
   box-sizing: border-box;
   font-family: var(--font);
-  font-size: 16px;
+    font-size: 16px; 
+    /* Cuando definimos nuestra font-size a 16 px nuestro equivalente en rem sera 1 rem */
   scroll-behavior: smooth;
-  /* El truco de usar font-size: 62.5% en html es para facilitar el cálculo de pixeles a rem. Así 1rem queda = 10px. Entonces para pasar de px a rem solo divides la cantidad de px entre 10. (Ej. 25px = 2.5 rem;  36px = 3.6rem;  800px = 80rem etc.) */
+
+  
+  /* 
+  
+
+  EXISTE UN TRUCO PARA USAR MEDIDAS RELATIVAS: 
+  El truco de usar font-size: 62.5% en html es para facilitar el cálculo de pixeles a rem. Así 1rem queda = 10px. Entonces para pasar de px a rem solo divides la cantidad de px entre 10. (Ej. 25px = 2.5 rem;  36px = 3.6rem;  800px = 80rem etc.) */
   /* font-size: 62.5%;
      62.5% de 16px = 10px ⇒ 1.6rem = 16px */
 }
