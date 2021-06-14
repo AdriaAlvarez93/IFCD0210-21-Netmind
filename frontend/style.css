@@ -31,11 +31,10 @@
 html {
   box-sizing: border-box;
   font-family: var(--font);
-    font-size: 16px; 
-    /* Cuando definimos nuestra font-size a 16 px nuestro equivalente en rem sera 1 rem */
+  font-size: 16px;
+  /* Cuando definimos nuestra font-size a 16 px nuestro equivalente en rem sera 1 rem */
   scroll-behavior: smooth;
 
-  
   /* 
   Aunque no lo usamos en este caso >
   EXISTE UN TRUCO PARA USAR MEDIDAS RELATIVAS: 
@@ -55,13 +54,13 @@ a {
 a:hover {
   opacity: 0.75;
 }
-/* Agregamos herencia del html  */
+/* Agregamos herencia del html (border-box)  */
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
-
+/* Definimos nuestro rango de medidas en titulos */
 h1 {
   margin: 0;
   font-size: 2rem;
@@ -96,18 +95,83 @@ p {
 /* ********** Components **********/
 /* *******************************/
 
+/************ Card-Image **************/
+.card-image {
+  display: flex;
+  justify-content: center;
+}
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid #fff;
+}
+.card {
+  height: 379px;
+  width: 300px;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url("assets/profile.jpg") center center no-repeat;
+  /* si lo queremos en escala de grises  */
+  /* filter: grayscale(1); */
+  background-size: 520px;
+}
+.card0:hover {
+  background: url("assets/profile.jpg") left center no-repeat;
+  background-size: 600px;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card0:hover .fa {
+  opacity: 1;
+}
+
+.text-intoImg {
+  padding: 1.1rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fa {
+  color: #000;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.icons {
+  position: absolute;
+  fill: #0000;
+  color: #0000;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
 /* ********** HeroImage **************/
-.hero-image{
+.hero-image {
   background-image: var(--hero-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: var(--hero-attachment);
-
 }
 
-.hero-image-opacity{
+.hero-image-opacity {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -115,25 +179,24 @@ p {
   justify-content: center;
   text-align: center;
   background-color: var(--hero-opacity-color);
-
 }
 
-.hero-image-title{
+.hero-image-title {
   font-size: 7.5vw;
   color: var(--hero-text-color);
 }
 
 /* ********** Menu  *************/
-.menu-btn{
+.menu-btn {
   outline: thin solid var(--first-color);
-  border:0;
-  cursor:pointer;
+  border: 0;
+  cursor: pointer;
   background-color: var(--second-color);
 }
-.menu-btn svg{
+.menu-btn svg {
   fill: var(--first-color);
 }
-.menu{
+.menu {
   position: fixed;
   left: 0;
   bottom: var(--header-height);
@@ -143,13 +206,13 @@ p {
   background-color: var(--second-color);
   opacity: 0;
   pointer-events: none;
-  transition:opacity 0.5s ease ;
+  transition: opacity 0.5s ease;
 }
-.menu.is-active{
+.menu.is-active {
   opacity: 1;
   pointer-events: auto;
 }
-.menu a{
+.menu a {
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -157,53 +220,52 @@ p {
   text-decoration: none;
   color: var(--first-color);
 }
-.menu a:hover{
-  color:var(--white-color);
+.menu a:hover {
+  color: var(--white-color);
   background-color: var(--first-color);
 }
 
 @media screen and (min-width: 1024px) {
-  .menu-btn{
+  .menu-btn {
     display: none;
   }
-  .menu{
+  .menu {
     position: static;
     width: auto;
     flex-direction: row;
     opacity: 1;
     pointer-events: auto;
   }
-  .menu a{
+  .menu a {
     padding: 0 1rem;
   }
-  .menu a:last-child{
+  .menu a:last-child {
     padding-right: 0;
   }
-  .menu a:hover{
+  .menu a:hover {
     background-color: transparent;
   }
 }
 /* ****************ProgressBar *****************/
 
-progress{
+progress {
   width: 100%;
   height: 1rem;
-  background-color:var(--second-color);
-}
-progress::-webkit-progress-bar{
   background-color: var(--second-color);
 }
-progress::-webkit-progress-value{
+progress::-webkit-progress-bar {
+  background-color: var(--second-color);
+}
+progress::-webkit-progress-value {
   background-color: var(--first-color);
 }
-progress::-moz-progress-bar{
+progress::-moz-progress-bar {
   background-color: var(--first-color);
-
 }
-.progress{
+.progress {
   margin: 1rem auto;
 }
-.progress>p{
+.progress > p {
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -215,106 +277,100 @@ progress::-moz-progress-bar{
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
 }
 
-.btn{
-  border-radius: .5rem;
+.btn {
+  border-radius: 0.5rem;
   padding: 1rem;
   display: inline-block;
-  width:200px;
+  width: 200px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   color: var(--white-color);
   background-color: var(--first-color);
-
 }
-.container{
+.container {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--max-width);
 }
-.gray-scale{
+.gray-scale {
   filter: grayscale(1);
 }
 
-.none{
+.none {
   display: none;
 }
-.section{
+.section {
   padding: 2rem 1rem;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
-.text-left{
+.text-left {
   text-align: left;
 }
-.text-right{
+.text-right {
   text-align: right;
 }
 
-@media screen and (min-width:1024px){ 
-  .full-lg-screen{
+@media screen and (min-width: 1024px) {
+  .full-lg-screen {
     width: 100%;
     min-height: 100vh;
   }
-  .text-lg-center{
+  .text-lg-center {
     text-align: center;
   }
-  .text-lg-left{
+  .text-lg-left {
     text-align: left;
   }
-  .text-lg-right{
+  .text-lg-right {
     text-align: right;
   }
 }
 
 /* ***************Site Styles ************ */
 /* ************************************** */
-.about> article{
+.about > article {
   margin-bottom: 2rem;
 }
-.header{
+.header {
   position: fixed;
   left: 0;
   bottom: 0;
   z-index: 999;
-  padding: 1rem ;
+  padding: 1rem;
   width: 100%;
-  height:var(--header-height); /*4rem*/
+  height: var(--header-height); /*4rem*/
   background-color: var(--second-color);
 }
 
-.header>.container{
+.header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logo a{
- color: var(--first-color);
- font-weight: bold;
- font-size: 2rem;
- text-decoration: none;
+.logo a {
+  color: var(--first-color);
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
-@media screen and (min-width: 768px){  
-
-
+@media screen and (min-width: 768px) {
 }
-@media screen and (min-width: 1024px){
-.about{
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  justify-content: space-between;
-  align-content: center;
-}
+@media screen and (min-width: 1024px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-content: center;
+  }
 
-
-  .header{
-  position: sticky;
-  top: 0;
-  padding: .5rem ;
-  height: 3.5rem;
-
-}
-
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    height: 3.5rem;
+  }
 }
