@@ -177,16 +177,16 @@ a:hover {
 
 .contenido {
   height: auto;
-  background-color: white;
+  background-color: black;
   border-radius: 10px;
   width: 95%;
   margin: auto;
-  color: black;
+  color: white;
 }
 .contenido div {
   text-align: center;
   font-size: 20px;
-  color: black;
+  color: white;
   padding-top: 20px;
 }
 
@@ -222,13 +222,14 @@ a:hover {
 
 .caja {
   box-shadow: -1px 4px 21px black;
-  transition: 1s;
+  transition: 0.2s;
 }
 
 .caja:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 12px;
+  margin: 10px;
 }
 /*mensaje ----------------------------------------------------------------------------------------*/
 
