@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="estilos/style2.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.jpg" alt="imagen logo" id="logo">
+        <h3 id="hea">DEGUSTACIONES</h3>
+        <nav>
+            <ul>
+                <li><a href="Inicio.index">Inicio</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <input type="text" id="nom" placeholder="Nombre">
+        <span class="error"></span>
+        <input type="text" id="ape" placeholder="Apellido">
+        <span class="error"></span>
+        <input type="email" id="email" pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="Email">
+        <span class="error"></span>
+        <div id="select">
+        <label for="lista">Elija Turno</label>
+        <select>
+            <option value="1">Mañana</option>
+            <option value="2">Tarde</option>
+            <option value="3">Noche</option>
+        </select>
+    </div>
+        <input type="submit" value="Enviar">
+    </main>
+</body>
+<footer>
+    <li><a href="Reserva.index">Pide tu Reserva</a></li>
+</footer>
+</html>
