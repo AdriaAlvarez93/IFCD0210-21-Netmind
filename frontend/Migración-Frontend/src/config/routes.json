@@ -1,0 +1,15 @@
+{
+    "": {
+        "controller": "StaticController",
+        "action": "renderHome"
+    },
+    "home": {
+        "controller": "StaticController",
+        "action": "renderHome"
+    },
+    "contacto": {
+        "controller": "ContactoController",
+        "action": "renderContacto"
+    }
+    
+}

@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(/IFCD0210-21-Netmind/Imagenes/Traditio\ et\ religio.png);
+}
+
+form {
+    width: 400px;
+    padding: 30px;
+    background-color:black;
+    border-radius: 7px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.32);
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    margin-top: 8px;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    line-height: 40px;
+    background-color: goldenrod;
+    border: 1px solid #87314e;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+    border: 1px solid #6c2737;
+}
+
+.invalid {
+    border: 1px solid #900 !important;
+    background-color: #fdd;
+}
+
+
+
+.error {
+    font-size: 75%;
+    color: #900;
+}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="public/css/forms.css">
+{% endblock %}
+
+{% block body %}
+
+{% include 'templates/header.html' %}
+
+<main>
+    <h1 class="center">Contacto</h1>
+    <form class="form_contacto" novalidate>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre (4-20 caract)">
+        <input type="email" name="email" id="email" placeholder="email">
+        <textarea name="mensaje" id="mensaje" placeholder="mensaje (4-200 caract)"></textarea>
+        <input type="submit" class="btn" value="Enviar">
+        <div class="mensajes center"></div>
+    </form>
+</main>
+
+{% include 'templates/footer.html' %}
+
+{% endblock %}
+
+ 
